@@ -12,7 +12,7 @@ Patch1:		%{name}-disable_schemas_install.patch
 URL:		http://www.nongnu.org/tutka/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-common
+BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel
 BuildRequires:	libglade2-devel >= 0.12
 BuildRequires:	libgnomeui-devel
@@ -39,7 +39,7 @@ d¼wiêkowymi.
 %patch1 -p1
 
 %build
-%{__aclocal} -I %{_aclocaldir}/gnome2-macros
+%{__aclocal}
 %{__autoheader}
 %{__automake}
 %{__autoconf}
