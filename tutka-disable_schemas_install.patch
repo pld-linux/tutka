@@ -1,0 +1,14 @@
+diff -aurN tutka-0.11.2.orig/Makefile.am tutka-0.11.2/Makefile.am
+--- tutka-0.11.2.orig/Makefile.am	2003-09-21 19:47:09.000000000 +0200
++++ tutka-0.11.2/Makefile.am	2004-08-18 11:37:01.007927320 +0200
+@@ -25,8 +25,8 @@
+ 	$(mkinstalldirs) $(DESTDIR)$(datadir)/pixmaps
+ 	$(INSTALL_DATA) tutka.png $(DESTDIR)$(datadir)/pixmaps
+ 	$(mkinstalldirs) $(GCONF_SCHEMA_FILE_DIR)
+-	$(INSTALL_DATA) tutka.schemas $(GCONF_SCHEMA_FILE_DIR)
+-	GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule tutka.schemas
++	$(INSTALL_DATA) tutka.schemas $(DESTDIR)$(GCONF_SCHEMA_FILE_DIR)
++	## GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule tutka.schemas
+ 
+ dist-hook:
+ 	if test -d pixmaps; then \
