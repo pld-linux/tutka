@@ -28,7 +28,7 @@ except that it does not support samples and is meant for MIDI use
 only.
 
 %description -l pl
-Tutka jest wolnym sekwencerem MIDI w stylu trackera dla GNU/Linuxa.
+Tutka jest wolnym sekwencerem MIDI w stylu trackera dla GNU/Linuksa.
 Przypomina programy jak SoundTracker, ProTracker i FastTracker z tym
 ¿e, przeznaczony jest wy³±cznie do prac z MIDI, a nie z próbkami
 d¼wiêkowymi.
