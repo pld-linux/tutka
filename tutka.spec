@@ -51,7 +51,6 @@ d¼wiêkowymi.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-#install -d $RPM_BUILD_ROOT%{_sysconfdir}/gconf/schemas
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
