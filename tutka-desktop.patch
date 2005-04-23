@@ -1,6 +1,6 @@
-diff -aurN tutka-0.11.2.orig/tutka.desktop tutka-0.11.2/tutka.desktop
---- tutka-0.11.2.orig/tutka.desktop	2003-01-22 18:15:06.000000000 +0100
-+++ tutka-0.11.2/tutka.desktop	2004-08-18 11:28:06.691155816 +0200
+diff -aurN tutka-0.12.3.orig/tutka.desktop tutka-0.12.3/tutka.desktop
+--- tutka-0.12.3.orig/tutka.desktop	2005-04-03 23:44:29.000000000 +0200
++++ tutka-0.12.3/tutka.desktop	2005-04-23 16:45:39.000000000 +0200
 @@ -1,9 +1,11 @@
  [Desktop Entry]
  Encoding=UTF-8
@@ -10,9 +10,9 @@ diff -aurN tutka-0.11.2.orig/tutka.desktop tutka-0.11.2/tutka.desktop
 +Comment=Tracker style MIDI sequencer
 +Comment[pl]=Sekwencer MIDI w stylu trackera
  Exec=tutka
- Icon=tutka.png
+ Icon=tutka
  Terminal=false
  Type=Application
--Categories=GNOME;Application;AudioVideo;
+-Categories=GNOME;Application;AudioVideo;Audio;Midi;
 +Categories=GTK;GNOME;Audio;Sequencer;
 +# vi: encoding=utf-8
