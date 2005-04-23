@@ -1,12 +1,12 @@
 Summary:	Tracker style MIDI sequencer
 Summary(pl):	Sekwencer MIDI w stylu trackera
 Name:		tutka
-Version:	0.12.1
+Version:	0.12.3
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://savannah.nongnu.org/download/tutka/%{name}-%{version}.tar.bz2
-# Source0-md5:	37821c7d048933f7a0812202e0d4e264
+# Source0-md5:	083ca5148ce15939f58e7709ba612055
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-disable_schemas_install.patch
 URL:		http://www.nongnu.org/tutka/
@@ -20,7 +20,7 @@ BuildRequires:	libgnomeui-devel >= 2.6.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.4.16
 BuildRequires:	pkgconfig
-Requires(post):	GConf2
+Requires(post,preun):	GConf2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -51,7 +51,7 @@ d¼wiêkowymi.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_sysconfdir}/gconf/schemas
+#install -d $RPM_BUILD_ROOT%{_sysconfdir}/gconf/schemas
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -60,7 +60,10 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}/gconf/schemas
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%gconf_schema_install
+%gconf_schema_install tutka.schemas
+
+%preun
+%gconf_schema_install tutka.schemas
 
 %files
 %defattr(644,root,root,755)
