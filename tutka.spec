@@ -62,7 +62,7 @@ rm -rf $RPM_BUILD_ROOT
 %gconf_schema_install tutka.schemas
 
 %preun
-%gconf_schema_install tutka.schemas
+%gconf_schema_uninstall tutka.schemas
 
 %files
 %defattr(644,root,root,755)
