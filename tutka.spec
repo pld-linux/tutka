@@ -1,5 +1,5 @@
 Summary:	Tracker style MIDI sequencer
-Summary(pl):	Sekwencer MIDI w stylu trackera
+Summary(pl.UTF-8):   Sekwencer MIDI w stylu trackera
 Name:		tutka
 Version:	0.12.3
 Release:	1
@@ -29,11 +29,11 @@ similar to programs like SoundTracker, ProTracker and FastTracker
 except that it does not support samples and is meant for MIDI use
 only.
 
-%description -l pl
+%description -l pl.UTF-8
 Tutka jest wolnym sekwencerem MIDI w stylu trackera dla GNU/Linuksa.
 Przypomina programy jak SoundTracker, ProTracker i FastTracker z tym
-¿e, przeznaczony jest wy³±cznie do prac z MIDI, a nie z próbkami
-d¼wiêkowymi.
+Å¼e, przeznaczony jest wyÅ‚Ä…cznie do prac z MIDI, a nie z prÃ³bkami
+dÅºwiÄ™kowymi.
 
 %prep
 %setup -q
