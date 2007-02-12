@@ -1,5 +1,5 @@
 Summary:	Tracker style MIDI sequencer
-Summary(pl.UTF-8):   Sekwencer MIDI w stylu trackera
+Summary(pl.UTF-8):	Sekwencer MIDI w stylu trackera
 Name:		tutka
 Version:	0.12.3
 Release:	1
