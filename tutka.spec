@@ -1,12 +1,12 @@
 Summary:	Tracker style MIDI sequencer
 Summary(pl.UTF-8):	Sekwencer MIDI w stylu trackera
 Name:		tutka
-Version:	0.12.3
+Version:	0.12.4
 Release:	1
 License:	GPL v2
 Group:		Applications/Sound
 Source0:	http://savannah.nongnu.org/download/tutka/%{name}-%{version}.tar.bz2
-# Source0-md5:	083ca5148ce15939f58e7709ba612055
+# Source0-md5:	025d4ce39e638e7af002cb010d97d98f
 Patch0:		%{name}-desktop.patch
 Patch1:		%{name}-disable_schemas_install.patch
 URL:		http://www.nongnu.org/tutka/
